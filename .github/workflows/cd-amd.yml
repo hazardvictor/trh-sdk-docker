@@ -23,6 +23,8 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./Dockerfile
+          file: ./Dockerfile.amd
           push: true
-          tags: ${{ secrets.DOCKER_HUB_ORG_NAME }}/trh-sdk:latest
+          tags: |
+            ${{ secrets.DOCKER_HUB_ORG_NAME }}/trh-sdk:amd
+            ${{ secrets.DOCKER_HUB_ORG_NAME }}/trh-sdk:latest
