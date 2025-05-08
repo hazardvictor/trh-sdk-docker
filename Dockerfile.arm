@@ -1,4 +1,4 @@
-FROM --platform=linux/arm64/v8 ubuntu:latest
+FROM --platform=linux/arm64 ubuntu:latest
 
 # Set non-interactive frontend and working directory
 ENV DEBIAN_FRONTEND=noninteractive
